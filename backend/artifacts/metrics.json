@@ -1,0 +1,192 @@
+{
+  "n_test_segments": 142,
+  "n_items": 525,
+  "explained_variance": 0.6315,
+  "results": {
+    "popular": {
+      "precision@5": 0.4211,
+      "recall@5": 0.1542,
+      "ndcg@5": 0.4474,
+      "hit@5": 0.7324,
+      "precision@10": 0.3331,
+      "recall@10": 0.2358,
+      "ndcg@10": 0.3911,
+      "hit@10": 0.7606,
+      "coverage": 0.0895,
+      "diversity": 0.541,
+      "novelty": 6.332
+    },
+    "content": {
+      "precision@5": 0.469,
+      "recall@5": 0.1653,
+      "ndcg@5": 0.4957,
+      "hit@5": 0.7183,
+      "precision@10": 0.3669,
+      "recall@10": 0.2626,
+      "ndcg@10": 0.4313,
+      "hit@10": 0.7676,
+      "coverage": 0.1733,
+      "diversity": 0.5035,
+      "novelty": 6.367
+    },
+    "cf": {
+      "precision@5": 0.393,
+      "recall@5": 0.1543,
+      "ndcg@5": 0.4302,
+      "hit@5": 0.7535,
+      "precision@10": 0.3063,
+      "recall@10": 0.2385,
+      "ndcg@10": 0.3772,
+      "hit@10": 0.8169,
+      "coverage": 0.261,
+      "diversity": 0.6636,
+      "novelty": 7.963
+    },
+    "hybrid": {
+      "precision@5": 0.4873,
+      "recall@5": 0.1883,
+      "ndcg@5": 0.5219,
+      "hit@5": 0.7746,
+      "precision@10": 0.3754,
+      "recall@10": 0.2753,
+      "ndcg@10": 0.4524,
+      "hit@10": 0.8028,
+      "coverage": 0.2552,
+      "diversity": 0.5785,
+      "novelty": 7.334
+    },
+    "hybrid_mmr": {
+      "precision@5": 0.4761,
+      "recall@5": 0.1852,
+      "ndcg@5": 0.5132,
+      "hit@5": 0.7817,
+      "precision@10": 0.3754,
+      "recall@10": 0.2816,
+      "ndcg@10": 0.4527,
+      "hit@10": 0.8169,
+      "coverage": 0.2533,
+      "diversity": 0.5898,
+      "novelty": 7.355
+    }
+  },
+  "alpha_curve": [
+    {
+      "alpha": 0.0,
+      "precision@10": 0.3669,
+      "ndcg@10": 0.4313,
+      "coverage": 0.1733,
+      "diversity": 0.5035
+    },
+    {
+      "alpha": 0.1,
+      "precision@10": 0.3838,
+      "ndcg@10": 0.4608,
+      "coverage": 0.2533,
+      "diversity": 0.5603
+    },
+    {
+      "alpha": 0.2,
+      "precision@10": 0.3768,
+      "ndcg@10": 0.4539,
+      "coverage": 0.2514,
+      "diversity": 0.5689
+    },
+    {
+      "alpha": 0.3,
+      "precision@10": 0.3754,
+      "ndcg@10": 0.4524,
+      "coverage": 0.2552,
+      "diversity": 0.5785
+    },
+    {
+      "alpha": 0.4,
+      "precision@10": 0.3704,
+      "ndcg@10": 0.443,
+      "coverage": 0.2629,
+      "diversity": 0.5901
+    },
+    {
+      "alpha": 0.5,
+      "precision@10": 0.3683,
+      "ndcg@10": 0.4381,
+      "coverage": 0.2648,
+      "diversity": 0.5997
+    },
+    {
+      "alpha": 0.6,
+      "precision@10": 0.357,
+      "ndcg@10": 0.4292,
+      "coverage": 0.2648,
+      "diversity": 0.6098
+    },
+    {
+      "alpha": 0.7,
+      "precision@10": 0.3486,
+      "ndcg@10": 0.4184,
+      "coverage": 0.2705,
+      "diversity": 0.6225
+    },
+    {
+      "alpha": 0.8,
+      "precision@10": 0.3359,
+      "ndcg@10": 0.4068,
+      "coverage": 0.2629,
+      "diversity": 0.6365
+    },
+    {
+      "alpha": 0.9,
+      "precision@10": 0.3162,
+      "ndcg@10": 0.3875,
+      "coverage": 0.2571,
+      "diversity": 0.6508
+    },
+    {
+      "alpha": 1.0,
+      "precision@10": 0.3063,
+      "ndcg@10": 0.3772,
+      "coverage": 0.261,
+      "diversity": 0.6636
+    }
+  ],
+  "components_curve": [
+    {
+      "n_components": 5,
+      "precision@10": 0.3711,
+      "ndcg@10": 0.4566
+    },
+    {
+      "n_components": 10,
+      "precision@10": 0.3655,
+      "ndcg@10": 0.4453
+    },
+    {
+      "n_components": 20,
+      "precision@10": 0.3683,
+      "ndcg@10": 0.4455
+    },
+    {
+      "n_components": 40,
+      "precision@10": 0.3754,
+      "ndcg@10": 0.4524
+    },
+    {
+      "n_components": 60,
+      "precision@10": 0.3796,
+      "ndcg@10": 0.4494
+    },
+    {
+      "n_components": 80,
+      "precision@10": 0.3761,
+      "ndcg@10": 0.4446
+    }
+  ],
+  "config": {
+    "alpha": 0.3,
+    "n_components": 40,
+    "pop_weight": 0.05,
+    "min_reviews_per_item": 3,
+    "segment": "age x division",
+    "test_fraction": 0.2,
+    "relevance": "rating >= 4"
+  }
+}

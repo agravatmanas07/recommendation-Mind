@@ -1,0 +1,8 @@
+node_modules/
+frontend/dist-demo/
+backend/static/
+backend/data/app.db
+__pycache__/
+.pytest_cache/
+venv/
+.env

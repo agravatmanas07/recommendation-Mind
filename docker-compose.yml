@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: recomind
+      POSTGRES_PASSWORD: recomind
+      POSTGRES_DB: recomind
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U recomind"]
+      interval: 5s
+      retries: 10
+  app:
+    build: .
+    ports: ["5000:5000"]
+    environment:
+      DATABASE_URL: postgresql+psycopg2://recomind:recomind@db:5432/recomind
+      SECRET_KEY: change-this-to-a-long-random-string-in-production
+    depends_on:
+      db: { condition: service_healthy }
+volumes:
+  pgdata:

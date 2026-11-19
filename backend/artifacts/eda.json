@@ -1,0 +1,75 @@
+{
+  "n_reviews_raw": 23486,
+  "n_reviews": 22612,
+  "n_items_raw": 1206,
+  "n_items": 525,
+  "n_segments": 210,
+  "avg_rating": 4.196,
+  "recommend_rate": 0.822,
+  "sparsity_segment_matrix": 0.906,
+  "sparsity_row_index_matrix": 0.999171,
+  "missing": {
+    "Title": 3810,
+    "Review Text": 845,
+    "Division Name": 14,
+    "Department Name": 14,
+    "Class Name": 14
+  },
+  "rating_distribution": {
+    "1": 808,
+    "2": 1522,
+    "3": 2756,
+    "4": 4875,
+    "5": 12651
+  },
+  "class_counts": {
+    "Dresses": 6293,
+    "Knits": 4826,
+    "Blouses": 3090,
+    "Sweaters": 1418,
+    "Pants": 1356,
+    "Jeans": 1140,
+    "Fine gauge": 1088,
+    "Skirts": 934,
+    "Jackets": 694,
+    "Lounge": 504,
+    "Outerwear": 316,
+    "Shorts": 256,
+    "Swim": 196,
+    "Sleep": 143,
+    "Legwear": 123,
+    "Layering": 106,
+    "Trend": 85,
+    "Intimates": 44
+  },
+  "department_counts": {
+    "Tops": 10422,
+    "Dresses": 6293,
+    "Bottoms": 3686,
+    "Intimate": 1116,
+    "Jackets": 1010,
+    "Trend": 85
+  },
+  "age_bands": {
+    "18-24": 843,
+    "25-34": 4925,
+    "35-44": 7493,
+    "45-54": 4940,
+    "55-64": 3074,
+    "65-99": 1337
+  },
+  "rating_by_department": {
+    "Bottoms": 4.291,
+    "Dresses": 4.152,
+    "Intimate": 4.316,
+    "Jackets": 4.272,
+    "Tops": 4.172,
+    "Trend": 3.706
+  },
+  "reviews_per_item_quantiles": {
+    "0.25": 4.0,
+    "0.5": 8.0,
+    "0.75": 32.0,
+    "0.9": 115.60000000000002
+  }
+}
